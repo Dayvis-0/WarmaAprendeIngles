@@ -56,19 +56,22 @@ export const clothingLesson: Lesson = {
             english: 'T-shirt',
             spanish: 'Camiseta',
             description: '"I wear a blue t-shirt."',
-            image: '/images/clothing/pagina3.1tshirt.png'
+            image: '/images/clothing/pagina3.1tshirt.png',
+            audio: '/audios/clothing/pronunciation_en_t-shirt.mp3'
           },
           {
             english: 'Jeans',
             spanish: 'Jeans/pantalones',
             description: '"She has new jeans."',
-            image: '/images/clothing/pagina3.2.jeans.png'
+            image: '/images/clothing/pagina3.2.jeans.png',
+            audio: '/audios/clothing/pronunciation_en_jeans.mp3'
           },
           {
             english: 'Dress',
             spanish: 'Vestido',
             description: '"The dress is pretty."',
-            image: '/images/clothing/pagina3.3dress.png'
+            image: '/images/clothing/pagina3.3dress.png',
+            audio: '/audios/clothing/pronunciation_en_dress.mp3'
           }
         ]
       }
@@ -84,13 +87,15 @@ export const clothingLesson: Lesson = {
             english: 'Sneakers',
             spanish: 'Zapatillas',
             description: '"My sneakers are comfortable."',
-            image: '/images/clothing/pagina4.1sneakers.png'
+            image: '/images/clothing/pagina4.1sneakers.png',
+            audio: '/audios/clothing/pronunciation_en_sneakers.mp3'
           },
           {
             english: 'Backpack',
             spanish: 'Mochila',
             description: '"My backpack is heavy."',
-            image: '/images/clothing/pagina4.2backpack.png'
+            image: '/images/clothing/pagina4.2backpack.png',
+            audio: '/audios/clothing/pronunciation_en_backpack.mp3'
           }
         ]
       }
@@ -105,19 +110,23 @@ export const clothingLesson: Lesson = {
         phrases: [
           {
             english: 'What are you wearing?',
-            spanish: '¿Qué llevas puesto?'
+            spanish: '¿Qué llevas puesto?',
+            audio: '/audios/clothing/whatareyouwearing.mp3'
           },
           {
             english: 'I am wearing a red dress.',
-            spanish: 'Llevo un vestido rojo.'
+            spanish: 'Llevo un vestido rojo.',
+            audio: '/audios/clothing/iamwearingareddress.mp3'
           },
           {
             english: 'Put on your shoes.',
-            spanish: 'Ponte los zapatos.'
+            spanish: 'Ponte los zapatos.',
+            audio: '/audios/clothing/put_on_tour_shoes.mp3'
           },
           {
             english: 'Take off your hat.',
-            spanish: 'Quítate la gorra.'
+            spanish: 'Quítate la gorra.',
+            audio: '/audios/clothing/takeoffyourhat.mp3'
           }
         ]
       }

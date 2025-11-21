@@ -30,13 +30,15 @@ export const weatherLesson: Lesson = {
             english: 'Sun',
             spanish: 'Sol',
             description: 'La estrella que da luz y calor.',
-            image: '/images/weather/pagina2.1sun.png'
+            image: '/images/weather/pagina2.1sun.png',
+            audio: '/audios/weather/pronunciation_en_sun.mp3'
           },
           {
             english: 'Cloud / Rain',
             spanish: 'Nube / lluvia',
             description: 'Las gotas que caen del cielo.',
-            image: '/images/weather/pagina2.2cloud.png'
+            image: '/images/weather/pagina2.2cloud.png',
+            audio: '/audios/weather/pronunciation_en_rain.mp3'
           }
         ]
       }
@@ -52,19 +54,22 @@ export const weatherLesson: Lesson = {
             english: 'Partly cloudy',
             spanish: 'Parcialmente nublado',
             description: 'Sol y nubes juntos.',
-            image: '/images/weather/pagina3.1partycloud.png'
+            image: '/images/weather/pagina3.1partycloud.png',
+            audio: '/audios/weather/pronunciation_en_partly_cloudy.mp3'
           },
           {
             english: 'Thunderstorm',
             spanish: 'Tormenta',
             description: 'Lluvia fuerte con truenos y relámpagos.',
-            image: '/images/weather/pagina3.2thunderstorm.png'
+            image: '/images/weather/pagina3.2thunderstorm.png',
+            audio: '/audios/weather/pronunciation_en_thunderstorm.mp3'
           },
           {
             english: 'Fog',
             spanish: 'Niebla',
             description: 'Nubes cerca del suelo que cubren la vista.',
-            image: '/images/weather/pagina3.3fog.png'
+            image: '/images/weather/pagina3.3fog.png',
+            audio: '/audios/weather/pronunciation_en_fog.mp3'
           }
         ]
       }
@@ -79,23 +84,28 @@ export const weatherLesson: Lesson = {
         phrases: [
           {
             english: "What's the weather like today?",
-            spanish: '¿Cómo está el tiempo hoy?'
+            spanish: '¿Cómo está el tiempo hoy?',
+            audio: '/audios/weather/what_the_weather_like.mp3'
           },
           {
             english: "It's sunny.",
-            spanish: 'Está soleado.'
+            spanish: 'Está soleado.',
+            audio: '/audios/weather/its_sunny.mp3'
           },
           {
             english: "It's raining.",
-            spanish: 'Está lloviendo.'
+            spanish: 'Está lloviendo.',
+            audio: '/audios/weather/its_raining.mp3'
           },
           {
             english: "It's very windy.",
-            spanish: 'Hace mucho viento.'
+            spanish: 'Hace mucho viento.',
+            audio: "/audios/weather/it's_very_windy.mp3"
           },
           {
             english: "Look! There's a rainbow.",
-            spanish: '¡Mira! Hay un arcoíris.'
+            spanish: '¡Mira! Hay un arcoíris.',
+            audio: "/audios/weather/look_there's_a_rainbrow.mp3"
           }
         ]
       }
@@ -111,13 +121,15 @@ export const weatherLesson: Lesson = {
             english: 'Sunny',
             spanish: 'Soleado',
             description: 'Wear sunglasses and a T-shirt. (gafas de sol, camiseta)',
-            image: '/images/weather/pagina5.1sunny.png'
+            image: '/images/weather/pagina5.1sunny.png',
+            audio: '/audios/weather/pronunciation_en_sunny.mp3'
           },
           {
             english: 'Rainy',
             spanish: 'Lluvioso',
             description: 'Wear a raincoat and use an umbrella. (impermeable, paraguas)',
-            image: '/images/weather/pagina5.2Rainy.png'
+            image: '/images/weather/pagina5.2Rainy.png',
+            audio: '/audios/weather/pronunciation_en_rainy.mp3'
           }
         ]
       }
@@ -199,17 +211,20 @@ export const weatherLesson: Lesson = {
           {
             english: 'Temperature',
             spanish: 'Temperatura',
-            description: 'Cuánto calor o frío hace.'
+            description: 'Cuánto calor o frío hace.',
+            audio: '/audios/weather/pronunciation_en_temperature.mp3'
           },
           {
             english: 'Forecast',
             spanish: 'Previsión',
-            description: 'Lo que el meteorólogo dice que pasará.'
+            description: 'Lo que el meteorólogo dice que pasará.',
+            audio: '/audios/weather/pronunciation_en_forecast.mp3'
           },
           {
             english: 'Rainbow',
             spanish: 'Arcoíris',
-            description: 'Colores que aparecen tras la lluvia y el sol.'
+            description: 'Colores que aparecen tras la lluvia y el sol.',
+            audio: '/audios/weather/pronunciation_en_rainbow.mp3'
           }
         ]
       }
