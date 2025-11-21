@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Home, Trophy } from 'lucide-react';
 import type { Game } from '../types';
+import MemoryGame from '../components/MemoryGame';
 
 interface GameViewProps {
   games: Game[];
@@ -91,11 +92,15 @@ const GameView: React.FC<GameViewProps> = ({ games }) => {
               </div>
             </div>
 
-            <button
-              className={`bg-gradient-to-r ${game.color} text-white text-xl font-bold py-5 px-12 rounded-2xl hover:shadow-2xl transform hover:scale-105 transition-all shadow-lg`}
-            >
-              🚀 ¡Comenzar Juego!
-            </button>
+            {game.type === 'memory' ? (
+              <MemoryGame gameColor={game.color} />
+            ) : (
+              <button
+                className={`bg-gradient-to-r ${game.color} text-white text-xl font-bold py-5 px-12 rounded-2xl hover:shadow-2xl transform hover:scale-105 transition-all shadow-lg`}
+              >
+                🚀 ¡Comenzar Juego!
+              </button>
+            )}
 
             <p className="text-gray-500 mt-6 text-sm">
               Este juego está en desarrollo. ¡Pronto estará disponible!
