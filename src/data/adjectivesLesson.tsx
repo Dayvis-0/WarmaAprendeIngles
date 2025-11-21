@@ -60,25 +60,29 @@ export const adjectivesLesson: Lesson = {
             english: 'BIG',
             spanish: 'Grande',
             description: 'The elephant is big.',
-            image: '/images/adjectives/pagina3.1big.png'
+            image: '/images/adjectives/pagina3.1big.png',
+            audio: '/audios/adjectives/pronunciation_en_big.mp3'
           },
           {
             english: 'SMALL',
             spanish: 'Pequeño',
             description: 'The mouse is small.',
-            image: '/images/adjectives/pagina3.2small.jpg'
+            image: '/images/adjectives/pagina3.2small.jpg',
+            audio: '/audios/adjectives/pronunciation_en_small.mp3'
           },
           {
             english: 'HAPPY',
             spanish: 'Feliz',
             description: 'The boy is happy.',
-            image: '/images/adjectives/pagina3.3haappy.jpg'
+            image: '/images/adjectives/pagina3.3haappy.jpg',
+            audio: '/audios/adjectives/pronunciation_en_happy.mp3'
           },
           {
             english: 'SAD',
             spanish: 'Triste',
             description: 'The girl is sad.',
-            image: '/images/adjectives/pagina3.4sad.jpg'
+            image: '/images/adjectives/pagina3.4sad.jpg',
+            audio: '/audios/adjectives/pronunciation_en_sad.mp3'
           }
         ]
       }
@@ -95,25 +99,29 @@ export const adjectivesLesson: Lesson = {
             english: 'FAST',
             spanish: 'Rápido',
             description: 'The lightning is fast.',
-            icon: '⚡'
+            icon: '⚡',
+            audio: '/audios/adjectives/pronunciation_en_fast.mp3'
           },
           {
             english: 'SLOW',
             spanish: 'Lento',
             description: 'The turtle is slow.',
-            icon: '🐢'
+            icon: '🐢',
+            audio: '/audios/adjectives/pronunciation_en_slow.mp3'
           },
           {
             english: 'TALL',
             spanish: 'Alto',
             description: 'The giraffe is tall.',
-            icon: '🦒'
+            icon: '🦒',
+            audio: '/audios/adjectives/pronunciation_en_tall.mp3'
           },
           {
             english: 'SHORT',
             spanish: 'Bajo / Corto',
             description: 'The boy is short.',
-            icon: '👦'
+            icon: '👦',
+            audio: '/audios/adjectives/pronunciation_en_short.mp3'
           }
         ]
       }
@@ -130,13 +138,15 @@ export const adjectivesLesson: Lesson = {
             english: 'STRONG',
             spanish: 'Fuerte',
             description: 'The superhero is strong.',
-            image: '/images/adjectives/pagina5.1strong.png'
+            image: '/images/adjectives/pagina5.1strong.png',
+            audio: '/audios/adjectives/pronunciation_en_strong.mp3'
           },
           {
             english: 'WEAK',
             spanish: 'Débil',
             description: 'The plant is weak.',
-            image: '/images/adjectives/pagina5.2weak.png'
+            image: '/images/adjectives/pagina5.2weak.png',
+            audio: '/audios/adjectives/pronunciation_en_weak.mp3'
           }
         ]
       }
@@ -152,13 +162,15 @@ export const adjectivesLesson: Lesson = {
             english: 'CLEAN',
             spanish: 'Limpio',
             description: 'The room is clean.',
-            image: '/images/adjectives/pagina6.1clean.png'
+            image: '/images/adjectives/pagina6.1clean.png',
+            audio: '/audios/adjectives/pronunciation_en_clean.mp3'
           },
           {
             english: 'DIRTY',
             spanish: 'Sucio',
             description: 'The shoes are dirty.',
-            image: '/images/adjectives/pagina6.2.dirty.png'
+            image: '/images/adjectives/pagina6.2.dirty.png',
+            audio: '/audios/adjectives/pronunciation_en_dirty.mp3'
           }
         ]
       }
@@ -174,22 +186,30 @@ export const adjectivesLesson: Lesson = {
           {
             english: 'FUNNY',
             spanish: 'Gracioso',
-            description: 'The clown is funny.'
+            description: 'The clown is funny.',
+            icon: '🤡',
+            audio: '/audios/adjectives/pronunciation_en_funny.mp3'
           },
           {
             english: 'ANGRY',
             spanish: 'Enojado',
-            description: 'The cat is angry.'
+            description: 'The cat is angry.',
+            icon: '😠',
+            audio: '/audios/adjectives/pronunciation_en_angry.mp3'
           },
           {
             english: 'BRAVE',
             spanish: 'Valiente',
-            description: 'The boy is brave.'
+            description: 'The boy is brave.',
+            icon: '🦸',
+            audio: '/audios/adjectives/pronunciation_en_brave.mp3'
           },
           {
             english: 'SHY',
             spanish: 'Tímido',
-            description: 'The girl is shy.'
+            description: 'The girl is shy.',
+            icon: '😊',
+            audio: '/audios/adjectives/pronunciation_en_shy.mp3'
           }
         ]
       }
@@ -206,13 +226,15 @@ export const adjectivesLesson: Lesson = {
             english: 'LOUD',
             spanish: 'Ruidoso',
             description: 'The dog is loud.',
-            image: '/images/adjectives/pagina8.1loud.png'
+            image: '/images/adjectives/pagina8.1loud.png',
+            audio: '/audios/adjectives/pronunciation_en_loud.mp3'
           },
           {
             english: 'QUIET',
             spanish: 'Tranquilo / Silencioso',
             description: 'The baby is quiet.',
-            image: '/images/adjectives/pagina8.2quiet.png'
+            image: '/images/adjectives/pagina8.2quiet.png',
+            audio: '/audios/adjectives/pronunciation_en_quiet.mp3'
           }
         ]
       }
@@ -228,13 +250,15 @@ export const adjectivesLesson: Lesson = {
             english: 'HOT',
             spanish: 'Caliente',
             description: 'The soup is hot.',
-            image: '/images/adjectives/pagina9.1.hot.png'
+            image: '/images/adjectives/pagina9.1.hot.png',
+            audio: '/audios/adjectives/pronunciation_en_hot.mp3'
           },
           {
             english: 'COLD',
             spanish: 'Frío',
             description: 'The ice is cold.',
-            image: '/images/adjectives/pagina9.2.cold.png'
+            image: '/images/adjectives/pagina9.2.cold.png',
+            audio: '/audios/adjectives/pronunciation_en_cold.mp3'
           }
         ]
       }

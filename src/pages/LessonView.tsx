@@ -17,6 +17,14 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
 
   const lesson = lessons.find(l => l.id === Number(lessonId));
 
+  // Función para reproducir audio
+  const playAudio = (audioUrl?: string) => {
+    if (audioUrl) {
+      const audio = new Audio(audioUrl);
+      audio.play().catch(err => console.error('Error playing audio:', err));
+    }
+  };
+
   // Navegación con teclado
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -123,9 +131,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                       <span className="text-gray-600 font-medium">{item.spanish}: </span>
                       <span className="text-2xl font-bold text-blue-600">{item.english}</span>
                     </div>
-                    <button className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
-                      <Volume2 className="w-4 h-4 text-white" />
-                    </button>
+                    {item.audio && (
+                      <button onClick={() => playAudio(item.audio)} className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                        <Volume2 className="w-4 h-4 text-white" />
+                      </button>
+                    )}
                   </div>
                   {item.description && (
                     <p className="text-gray-600 mt-2 text-sm">{item.description}</p>
@@ -167,9 +177,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                       <p className="text-sm text-gray-500">{item.description}</p>
                     )}
                   </div>
-                  <button className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors flex-shrink-0">
-                    <Volume2 className="w-4 h-4 text-white" />
-                  </button>
+                  {item.audio && (
+                    <button onClick={() => playAudio(item.audio)} className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors flex-shrink-0">
+                      <Volume2 className="w-4 h-4 text-white" />
+                    </button>
+                  )}
                 </div>
               ))}
             </div>
@@ -194,9 +206,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                           <span className="text-gray-600 font-medium">{item.spanish}: </span>
                           <span className="text-xl font-bold text-blue-600">{item.english}</span>
                         </div>
-                        <button className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
-                          <Volume2 className="w-4 h-4 text-white" />
-                        </button>
+                        {item.audio && (
+                          <button onClick={() => playAudio(item.audio)} className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                            <Volume2 className="w-4 h-4 text-white" />
+                          </button>
+                        )}
                       </div>
                       {item.description && (
                         <p className="text-gray-600 mt-2 text-sm">{item.description}</p>
@@ -276,9 +290,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                           <td className="py-3 px-4 font-bold text-blue-600">{item.english}</td>
                           <td className="py-3 px-4 text-purple-600 italic">{item.pronunciation}</td>
                           <td className="py-3 px-4">
-                            <button className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
-                              <Volume2 className="w-3 h-3 text-white" />
-                            </button>
+                            {item.audio && (
+                              <button onClick={() => playAudio(item.audio)} className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                                <Volume2 className="w-3 h-3 text-white" />
+                              </button>
+                            )}
                           </td>
                         </tr>
                       ))}
@@ -363,9 +379,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                   {item.description && (
                     <p className="text-sm text-gray-500 italic mt-2">{item.description}</p>
                   )}
-                  <button className="mt-2 bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
-                    <Volume2 className="w-4 h-4 text-white" />
-                  </button>
+                  {item.audio && (
+                    <button onClick={() => playAudio(item.audio)} className="mt-2 bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                      <Volume2 className="w-4 h-4 text-white" />
+                    </button>
+                  )}
                 </div>
               ))}
             </div>
@@ -469,9 +487,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                   {item.description && (
                     <p className="text-sm text-gray-500 italic mt-2 bg-pink-50 rounded-lg p-2">{item.description}</p>
                   )}
-                  <button className="mt-3 bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
-                    <Volume2 className="w-4 h-4 text-white" />
-                  </button>
+                  {item.audio && (
+                    <button onClick={() => playAudio(item.audio)} className="mt-3 bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                      <Volume2 className="w-4 h-4 text-white" />
+                    </button>
+                  )}
                 </div>
               ))}
             </div>
@@ -492,9 +512,11 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                         <p className="text-lg font-bold text-pink-700">"{phrase.english}"</p>
                         <p className="text-gray-600">— {phrase.spanish}</p>
                       </div>
-                      <button className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
-                        <Volume2 className="w-4 h-4 text-white" />
-                      </button>
+                      {phrase.audio && (
+                        <button onClick={() => playAudio(phrase.audio)} className="bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                          <Volume2 className="w-4 h-4 text-white" />
+                        </button>
+                      )}
                     </div>
                   ))}
                 </div>

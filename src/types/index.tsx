@@ -48,6 +48,7 @@ export interface VocabularyItem {
   image?: string;
   icon?: string;
   number?: number;
+  audio?: string;  // ← Ruta del audio
 }
 
 export interface ActivityItem {
@@ -61,6 +62,7 @@ export interface SummaryItem {
   spanish: string;
   english: string;
   pronunciation: string;
+  audio?: string;  // ← NUEVO: Añadido para audios en summary
 }
 
 export interface Dialogue {
@@ -84,6 +86,7 @@ export interface Objective {
 export interface Phrase {
   english: string;
   spanish: string;
+  audio?: string;  // ← NUEVO: Añadido para audios en phrases
 }
 
 export interface Step {
