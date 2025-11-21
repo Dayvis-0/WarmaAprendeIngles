@@ -12,7 +12,7 @@ export interface Lesson {
 
 export interface Slide {
   id: number;
-  type: 'intro' | 'chapter' | 'chapter-vocabulary' | 'chapter-vocabulary-numbered' | 'vocabulary' | 'activity' | 'summary' | 'final' | 'adjectives-grid' | 'dialogues' | 'activities';
+  type: 'intro' | 'chapter' | 'chapter-vocabulary' | 'chapter-vocabulary-numbered' | 'vocabulary' | 'activity' | 'summary' | 'final' | 'adjectives-grid' | 'dialogues' | 'activities' | 'objectives' | 'clothing-vocabulary' | 'phrases' | 'game-activity' | 'hands-on-activity' | 'fill-blank-test' | 'tips';
   title: string;
   subtitle?: string;
   content: SlideContent;
@@ -31,6 +31,13 @@ export interface SlideContent {
   extraImage?: string;
   dialogues?: Dialogue[];
   activities?: ActivityBlock[];
+  objectives?: Objective[];
+  phrases?: Phrase[];
+  steps?: Step[];
+  images?: string[];
+  questions?: TestQuestion[];
+  tips?: Tip[];
+  finalTips?: Tip[];
 }
 
 export interface VocabularyItem {
@@ -66,6 +73,34 @@ export interface ActivityBlock {
   title: string;
   instruction: string;
   questions: string[];
+}
+
+export interface Objective {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Phrase {
+  english: string;
+  spanish: string;
+}
+
+export interface Step {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface TestQuestion {
+  sentence: string;
+  answer: string;
+}
+
+export interface Tip {
+  title: string;
+  description: string;
+  icon: string;
 }
 
 // Tipos para los juegos
