@@ -8,7 +8,7 @@ export const bodyPartsLesson: Lesson = {
   color: "from-blue-400 to-blue-600",
   bgColor: "bg-blue-50",
   slides: [
-    // SLIDE 1: Intro
+    // PÁGINA 1: Intro
     {
       id: 1,
       type: 'intro',
@@ -19,20 +19,12 @@ export const bodyPartsLesson: Lesson = {
         text: 'Hola, super exploradores! Hoy vamos a iniciar un viaje increíble para conocer una máquina maravillosa: nuestro cuerpo! Y lo mejor es que lo haremos aprendiendo sus nombres en inglés. ¡Prepárense para la diversión!'
       }
     },
-    // SLIDE 2: Capítulo 1
+    // PÁGINA 2: Capítulo 1 + Partes Principales
     {
       id: 2,
-      type: 'chapter',
+      type: 'chapter-vocabulary',
       title: 'Capítulo 1: La Base de Nuestra Aventura',
       subtitle: 'Partes Principales del Cuerpo',
-      content: {}
-    },
-    // SLIDE 3: Partes Principales
-    {
-      id: 3,
-      type: 'vocabulary',
-      title: 'Partes Principales del Cuerpo',
-      image: '/images/body/pagina3.png',
       content: {
         items: [
           {
@@ -58,12 +50,13 @@ export const bodyPartsLesson: Lesson = {
         ]
       }
     },
-    // SLIDE 4: Sensores de la Cabeza
+    // PÁGINA 3: Sensores de la Cabeza
     {
-      id: 4,
+      id: 3,
       type: 'vocabulary',
       title: 'Los Sensores de la Cabeza (The Head)',
-      image: '/images/body/pagina5.1.png',
+      image: '/images/body/pagina3.png',
+      imagePosition: 'right',
       content: {
         text: 'La cabeza tiene partes que nos ayudan a explorar el mundo. ¡Veamos qué hay!',
         items: [
@@ -90,12 +83,11 @@ export const bodyPartsLesson: Lesson = {
         ]
       }
     },
-    // SLIDE 5: De la Cabeza a los Dedos
+    // PÁGINA 4: De la Cabeza a los Dedos
     {
-      id: 5,
+      id: 4,
       type: 'vocabulary',
       title: 'De la Cabeza a los Dedos',
-      image: '/images/body/pagina5.2.png',
       content: {
         text: 'Aprendamos sobre las partes pequeñas pero poderosas de nuestro cuerpo.',
         items: [
@@ -127,9 +119,9 @@ export const bodyPartsLesson: Lesson = {
         ]
       }
     },
-    // SLIDE 6: Juego de Vocabulario
+    // PÁGINA 5: Juego de Vocabulario Rápido
     {
-      id: 6,
+      id: 5,
       type: 'activity',
       title: 'Juego de Vocabulario Rápido',
       subtitle: '¡A Mover el Esqueleto! (Let\'s Move the Skeleton!)',
@@ -139,37 +131,31 @@ export const bodyPartsLesson: Lesson = {
           {
             spanish: 'Brazo',
             english: 'Arm',
-            instruction: 'Dobla tu arm en el codo (elbow).'
+            instruction: 'Dobla tu arm en el codo (elbow).',
+            image: '/images/body/pagina5.1.png'
           },
           {
             spanish: 'Mano y Dedos',
             english: 'Hand & Fingers',
-            instruction: 'Mueve tus fingers de la hand rápidamente.'
+            instruction: 'Mueve tus fingers de la hand rápidamente.',
+            image: '/images/body/pagina5.2.png'
           },
           {
             spanish: 'Pierna y Rodilla',
             english: 'Leg & Knee',
-            instruction: 'Levanta tu leg doblando la knee.'
+            instruction: 'Levanta tu leg doblando la knee.',
+            image: '/images/body/pagina5.3.png'
           }
-        ]
+        ],
+        extraImage: '/images/body/pagina5.4.png'
       }
     },
-    // SLIDE 7: Capítulo 2
+    // PÁGINA 6: Capítulo 2 + Brazos y Manos
     {
-      id: 7,
-      type: 'chapter',
+      id: 6,
+      type: 'chapter-vocabulary-numbered',
       title: 'Capítulo 2: Las Extremidades Poderosas',
       subtitle: 'Brazos y Manos (Arms and Hands)',
-      content: {
-        text: 'Nuestras extremidades superiores nos dan la capacidad de crear y manipular.'
-      }
-    },
-    // SLIDE 8: Brazos y Manos (numerado)
-    {
-      id: 8,
-      type: 'vocabulary-numbered',
-      title: 'Brazos y Manos (Arms and Hands)',
-      image: '/images/body/pagina5.3.png',
       content: {
         text: 'Nuestras extremidades superiores nos dan la capacidad de crear y manipular.',
         items: [
@@ -206,12 +192,11 @@ export const bodyPartsLesson: Lesson = {
         ]
       }
     },
-    // SLIDE 9: Piernas y Pies
+    // PÁGINA 7: Piernas y Pies
     {
-      id: 9,
+      id: 7,
       type: 'vocabulary',
       title: 'Piernas y Pies (Legs and Feet)',
-      image: '/images/body/pagina5.4.png',
       content: {
         text: 'Son nuestro motor de movimiento. Cada parte es clave para caminar, correr y saltar.',
         items: [
@@ -244,22 +229,12 @@ export const bodyPartsLesson: Lesson = {
         note: '¡Recuerda que foot es singular y feet es plural!'
       }
     },
-    // SLIDE 10: Capítulo 3
+    // PÁGINA 8: Capítulo 3 + Órganos Vitales
     {
-      id: 10,
-      type: 'chapter',
+      id: 8,
+      type: 'chapter-vocabulary',
       title: 'Capítulo 3: Órganos Vitales (Vital Organs)',
       subtitle: 'Lo Que No Vemos Pero es Fundamental',
-      content: {
-        text: 'Dentro de nuestro tronco y cabeza hay órganos que trabajan sin parar. ¡Son como el motor de un coche!'
-      }
-    },
-    // SLIDE 11: Órganos Vitales
-    {
-      id: 11,
-      type: 'vocabulary',
-      title: 'Órganos Vitales (Vital Organs)',
-      image: '/images/body/pagina9.png',
       content: {
         text: 'Dentro de nuestro tronco y cabeza hay órganos que trabajan sin parar. ¡Son como el motor de un coche!',
         items: [
@@ -282,11 +257,12 @@ export const bodyPartsLesson: Lesson = {
         quote: 'Cuida bien tu cuerpo; es el único lugar que tienes para vivir. ¡Es tu templo!'
       }
     },
-    // SLIDE 12: Resumen
+    // PÁGINA 9: Resumen
     {
-      id: 12,
+      id: 9,
       type: 'summary',
       title: 'Resumen: ¡Todo Junto!',
+      image: '/images/body/pagina9.png',
       content: {
         text: 'Practiquemos algunas palabras importantes que aprendimos hoy.',
         summaryItems: [
@@ -297,13 +273,12 @@ export const bodyPartsLesson: Lesson = {
           { spanish: 'Pierna', english: 'Leg', pronunciation: '/lég/' },
           { spanish: 'Pie', english: 'Foot', pronunciation: '/fút/' },
           { spanish: 'Dedo', english: 'Finger', pronunciation: '/fínguer/' }
-        ],
-        instruction: 'Consejo para maestros: ¡Hagan el juego de "Simon Says" (Simón Dice) usando solo los nombres en inglés!'
+        ]
       }
     },
-    // SLIDE 13: Final
+    // PÁGINA 10: Final
     {
-      id: 13,
+      id: 10,
       type: 'final',
       title: '¡Felicidades, Exploradores Bilingües!',
       subtitle: '¡Sigue practicando!',

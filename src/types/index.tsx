@@ -11,11 +11,12 @@ export interface Lesson {
 
 export interface Slide {
   id: number;
-  type: 'intro' | 'chapter' | 'vocabulary' | 'vocabulary-numbered' | 'activity' | 'summary' | 'final';
+  type: 'intro' | 'chapter' | 'chapter-vocabulary' | 'chapter-vocabulary-numbered' | 'vocabulary' | 'activity' | 'summary' | 'final';
   title: string;
   subtitle?: string;
   content: SlideContent;
   image?: string;
+  imagePosition?: 'left' | 'right';
 }
 
 export interface SlideContent {
@@ -26,6 +27,7 @@ export interface SlideContent {
   instruction?: string;
   note?: string;
   quote?: string;
+  extraImage?: string;
 }
 
 export interface VocabularyItem {
@@ -41,6 +43,7 @@ export interface ActivityItem {
   spanish: string;
   english: string;
   instruction: string;
+  image?: string;
 }
 
 export interface SummaryItem {
