@@ -1,180 +1,231 @@
-import type { Lesson } from '../types';
+import type { Lesson } from "../types";
 
 export const weatherLesson: Lesson = {
   id: 4,
-  title: "El Tiempo",
-  subtitle: "Weather & Climate",
+  title: "El tiempo (Weather)",
+  subtitle: "Vocabulario y conceptos",
   emoji: "🌤️",
-  color: "from-cyan-400 to-cyan-600",
-  bgColor: "bg-cyan-50",
+  color: "from-sky-400 to-blue-600",
+  bgColor: "bg-sky-50",
+  pptFile: "/ppts/El-tiempo-Weather-vocabulario-y-conceptos.pptx",
   slides: [
+    // PÁGINA 1: Intro
     {
       id: 1,
       type: 'intro',
       title: 'El tiempo (Weather) — vocabulario y conceptos',
+      image: '/images/weather/pagina1.png',
       content: {
-        text: 'Hoy aprenderemos palabras y ideas clave sobre el tiempo en inglés. Verás imágenes, ejemplos y actividades fáciles para practicar.',
+        text: 'Hoy aprenderemos palabras y ideas clave sobre el tiempo en inglés. Verás imágenes, ejemplos y actividades fáciles para practicar.'
       }
     },
+    // PÁGINA 2: Palabras básicas
     {
       id: 2,
-      type: 'vocabulary',
-      title: 'Palabras Básicas',
+      type: 'clothing-vocabulary',
+      title: 'Palabras básicas / Basic words',
       content: {
-        text: 'Basic Words',
         items: [
           {
             english: 'Sun',
             spanish: 'Sol',
-            example: 'La estrella que da luz y calor.'
+            description: 'La estrella que da luz y calor.',
+            image: '/images/weather/pagina2.1sun.png'
           },
           {
-            english: 'Cloud',
-            spanish: 'Nube',
-            pronunciation: '/klaud/',
-            example: 'Formaciones de agua en el cielo.'
-          },
-          {
-            english: 'Rain',
-            spanish: 'Lluvia',
-            pronunciation: '/reɪn/',
-            example: 'Las gotas que caen del cielo.'
+            english: 'Cloud / Rain',
+            spanish: 'Nube / lluvia',
+            description: 'Las gotas que caen del cielo.',
+            image: '/images/weather/pagina2.2cloud.png'
           }
         ]
       }
     },
+    // PÁGINA 3: Más palabras útiles
     {
       id: 3,
-      type: 'vocabulary',
-      title: 'Más Palabras Útiles',
+      type: 'clothing-vocabulary',
+      title: 'Más palabras útiles / More useful words',
       content: {
-        text: 'More Useful Words',
         items: [
           {
-            english: 'Partly Cloudy',
+            english: 'Partly cloudy',
             spanish: 'Parcialmente nublado',
-            example: 'Sol y nubes juntos.'
+            description: 'Sol y nubes juntos.',
+            image: '/images/weather/pagina3.1partycloud.png'
           },
           {
             english: 'Thunderstorm',
             spanish: 'Tormenta',
-            example: 'Lluvia fuerte con truenos y relámpagos.'
+            description: 'Lluvia fuerte con truenos y relámpagos.',
+            image: '/images/weather/pagina3.2thunderstorm.png'
           },
           {
             english: 'Fog',
             spanish: 'Niebla',
-            example: 'Nubes cerca del suelo que cubren la vista.'
-          },
-          {
-            english: 'Windy',
-            spanish: 'Ventoso',
-            pronunciation: '/ˈwɪndi/',
-            example: 'Cuando hay mucho viento.'
+            description: 'Nubes cerca del suelo que cubren la vista.',
+            image: '/images/weather/pagina3.3fog.png'
           }
         ]
       }
     },
+    // PÁGINA 4: Frases útiles
     {
       id: 4,
-      type: 'examples',
-      title: 'Frases Útiles en Inglés',
+      type: 'phrases',
+      title: 'Frases útiles en inglés / Useful phrases',
+      image: '/images/weather/pagina4.png',
       content: {
-        text: 'Useful Phrases',
-        examples: [
-          '"What\'s the weather like today?" — ¿Cómo está el tiempo hoy?',
-          '"It\'s sunny." — Está soleado.',
-          '"It\'s raining." — Está lloviendo.',
-          '"It\'s very windy." — Hace mucho viento.',
-          '"Look! There\'s a rainbow." — ¡Mira! Hay un arcoíris.'
+        phrases: [
+          {
+            english: "What's the weather like today?",
+            spanish: '¿Cómo está el tiempo hoy?'
+          },
+          {
+            english: "It's sunny.",
+            spanish: 'Está soleado.'
+          },
+          {
+            english: "It's raining.",
+            spanish: 'Está lloviendo.'
+          },
+          {
+            english: "It's very windy.",
+            spanish: 'Hace mucho viento.'
+          },
+          {
+            english: "Look! There's a rainbow.",
+            spanish: '¡Mira! Hay un arcoíris.'
+          }
         ]
       }
     },
+    // PÁGINA 5: Clima y ropa
     {
       id: 5,
-      type: 'vocabulary',
-      title: 'El Clima y la Ropa',
+      type: 'clothing-vocabulary',
+      title: 'El clima y la ropa / Weather and clothing',
       content: {
-        text: 'Weather and Clothing',
         items: [
           {
             english: 'Sunny',
             spanish: 'Soleado',
-            example: 'Wear sunglasses and a T-shirt. (gafas de sol, camiseta)'
+            description: 'Wear sunglasses and a T-shirt. (gafas de sol, camiseta)',
+            image: '/images/weather/pagina5.1sunny.png'
           },
           {
             english: 'Rainy',
             spanish: 'Lluvioso',
-            example: 'Wear a raincoat and use an umbrella. (impermeable, paraguas)'
+            description: 'Wear a raincoat and use an umbrella. (impermeable, paraguas)',
+            image: '/images/weather/pagina5.2Rainy.png'
           }
         ]
       }
     },
+    // PÁGINA 6: Actividades para practicar
     {
       id: 6,
-      type: 'activity',
-      title: 'Mini-actividad: ¿Qué tiempo hace?',
+      type: 'hands-on-activity',
+      title: 'Actividades para practicar / Activities',
       content: {
-        text: 'Observa por la ventana 1 minuto. Luego contesta en inglés:',
-        examples: [
-          'What do you see? (I see...)',
-          'Is it hot or cold? (It\'s hot / It\'s cold)',
-          'What should you wear? (I should wear...)'
+        text: 'Charades del tiempo: Un niño hace el clima y los demás adivinan en inglés. | Dibuja el tiempo: Dibuja el clima de hoy y escribe la palabra en inglés. | Juego de emparejar: Empareja imagen + palabra (sun, rain, snow, wind).',
+        images: [
+          '/images/weather/pagina6.1charades.png',
+          '/images/weather/pagina6.2.dibuja.png',
+          '/images/weather/pagina6.3.juego.png'
         ]
       }
     },
+    // PÁGINA 7: Mini-actividad
     {
       id: 7,
-      type: 'vocabulary',
-      title: 'Vocabulario Extra',
+      type: 'activities',
+      title: 'Mini-actividad: ¿Qué tiempo hace?',
+      subtitle: 'Observa por la ventana 1 minuto. Luego contesta en inglés:',
       content: {
-        text: 'Palabras que verás',
+        activities: [
+          {
+            title: 'Observation Activity',
+            instruction: 'Look outside and answer these questions in English:',
+            questions: [
+              'What do you see? (I see...)',
+              'Is it hot or cold? (It\'s hot / It\'s cold)',
+              'What should you wear? (I should wear...)'
+            ]
+          }
+        ]
+      }
+    },
+    // PÁGINA 8: Explicación científica
+    {
+      id: 8,
+      type: 'tips',
+      title: 'Pequeña explicación: ¿Por qué cambia el tiempo?',
+      content: {
+        text: 'El tiempo cambia por el sol, la temperatura y el movimiento del aire. El sol calienta la tierra y el aire se mueve formando viento, nubes y lluvia.',
+        tips: [
+          {
+            title: 'Sun heats',
+            description: 'El sol calienta la tierra',
+            icon: '☀️'
+          },
+          {
+            title: 'Warm air rises',
+            description: 'El aire caliente sube',
+            icon: '🌡️'
+          },
+          {
+            title: 'Clouds form',
+            description: 'Se forman las nubes',
+            icon: '☁️'
+          },
+          {
+            title: 'Rain or wind',
+            description: 'Lluvia o viento aparecen',
+            icon: '🌧️'
+          }
+        ]
+      }
+    },
+    // PÁGINA 9: Vocabulario extra
+    {
+      id: 9,
+      type: 'vocabulary',
+      title: 'Vocabulario extra: palabras que verás',
+      image: '/images/weather/paagina9.png',
+      imagePosition: 'right',
+      content: {
         items: [
           {
             english: 'Temperature',
             spanish: 'Temperatura',
-            example: 'Cuánto calor o frío hace.'
+            description: 'Cuánto calor o frío hace.'
           },
           {
             english: 'Forecast',
             spanish: 'Previsión',
-            example: 'Lo que el meteorólogo dice que pasará.'
+            description: 'Lo que el meteorólogo dice que pasará.'
           },
           {
             english: 'Rainbow',
             spanish: 'Arcoíris',
-            example: 'Colores que aparecen tras la lluvia y el sol.'
+            description: 'Colores que aparecen tras la lluvia y el sol.'
           }
         ]
       }
     },
-    {
-      id: 8,
-      type: 'activity',
-      title: 'Actividades para Practicar',
-      content: {
-        text: 'Activities',
-        examples: [
-          'Charades del tiempo - Un niño hace el clima y los demás adivinan en inglés.',
-          'Dibuja el tiempo - Dibuja el clima de hoy y escribe la palabra en inglés.',
-          'Juego de emparejar - Empareja imagen + palabra (sun, rain, snow, wind).'
-        ]
-      }
-    },
-    {
-      id: 9,
-      type: 'vocabulary',
-      title: '¿Por qué cambia el tiempo?',
-      content: {
-        text: 'El tiempo cambia por el sol, la temperatura y el movimiento del aire. El sol calienta la tierra y el aire se mueve formando viento, nubes y lluvia.',
-      }
-    },
+    // PÁGINA 10: Resumen
     {
       id: 10,
-      type: 'summary',
-      title: 'Resumen y Siguiente Paso',
+      type: 'hands-on-activity',
+      title: 'Resumen y siguiente paso / Summary & next step',
       content: {
-        text: 'Hoy aprendimos palabras y frases sobre el tiempo en inglés, vimos ropa apropiada y jugamos con actividades.',
-        instruction: 'Practica con un amigo: pregunta "What\'s the weather like?" y responde en inglés.'
+        text: 'Hoy aprendimos palabras y frases sobre el tiempo en inglés, vimos ropa apropiada y jugamos con actividades. Practica con un amigo: pregunta "What\'s the weather like?" y responde en inglés.',
+        images: [
+          '/images/weather/pagina10.1.png',
+          '/images/weather/ppagina10.2.png',
+          '/images/weather/ppagina10.3.png'
+        ]
       }
     }
   ]
