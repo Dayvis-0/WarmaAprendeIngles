@@ -7,11 +7,12 @@ export interface Lesson {
   color: string;
   bgColor: string;
   slides: Slide[];
+  pptFile?: string;
 }
 
 export interface Slide {
   id: number;
-  type: 'intro' | 'chapter' | 'chapter-vocabulary' | 'chapter-vocabulary-numbered' | 'vocabulary' | 'activity' | 'summary' | 'final';
+  type: 'intro' | 'chapter' | 'chapter-vocabulary' | 'chapter-vocabulary-numbered' | 'vocabulary' | 'activity' | 'summary' | 'final' | 'adjectives-grid' | 'dialogues' | 'activities';
   title: string;
   subtitle?: string;
   content: SlideContent;
@@ -28,6 +29,8 @@ export interface SlideContent {
   note?: string;
   quote?: string;
   extraImage?: string;
+  dialogues?: Dialogue[];
+  activities?: ActivityBlock[];
 }
 
 export interface VocabularyItem {
@@ -36,6 +39,7 @@ export interface VocabularyItem {
   pronunciation?: string;
   description?: string;
   image?: string;
+  icon?: string;
   number?: number;
 }
 
@@ -50,6 +54,18 @@ export interface SummaryItem {
   spanish: string;
   english: string;
   pronunciation: string;
+}
+
+export interface Dialogue {
+  speakers: string[];
+  lines: string[];
+  image?: string;
+}
+
+export interface ActivityBlock {
+  title: string;
+  instruction: string;
+  questions: string[];
 }
 
 // Tipos para los juegos

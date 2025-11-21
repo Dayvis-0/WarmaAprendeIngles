@@ -27,10 +27,8 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
         e.preventDefault();
         setCurrentSlide(prev => Math.max(0, prev - 1));
       } else if (e.key === 'Escape' && isFullscreen) {
-        // eslint-disable-next-line react-hooks/immutability
         handleExitFullscreen();
       } else if (e.key === 'f' || e.key === 'F') {
-        // eslint-disable-next-line react-hooks/immutability
         toggleFullscreen();
       }
     };
@@ -71,10 +69,12 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
   };
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/ppts/Aventura-en-el-Cuerpo-Humano.pptx';
-    link.download = 'Aventura-en-el-Cuerpo-Humano.pptx';
-    link.click();
+    if (lesson?.pptFile) {
+      const link = document.createElement('a');
+      link.href = lesson.pptFile;
+      link.download = lesson.pptFile.split('/').pop() || 'presentacion.pptx';
+      link.click();
+    }
   };
 
   const slide: Slide = lesson.slides[currentSlide];
@@ -317,6 +317,91 @@ const LessonView: React.FC<LessonViewProps> = ({ lessons }) => {
                 </div>
                 <div className="text-6xl mt-6">🎉🏆🌟</div>
               </div>
+            </div>
+          </div>
+        );
+
+      // ADJECTIVES GRID
+      case 'adjectives-grid':
+        return (
+          <div>
+            <h1 className="text-3xl lg:text-4xl font-bold text-purple-700 mb-2 text-center">{slide.title}</h1>
+            {slide.subtitle && (
+              <p className="text-lg text-gray-600 mb-6 text-center">{slide.subtitle}</p>
+            )}
+            <div className={`grid ${slide.content.items?.length === 2 ? 'md:grid-cols-2 max-w-3xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-4'} gap-4`}>
+              {slide.content.items?.map((item, i) => (
+                <div key={i} className="bg-gradient-to-b from-purple-50 to-pink-50 rounded-xl p-4 border-2 border-purple-200 shadow-md text-center hover:shadow-lg transition-shadow">
+                  {item.image ? (
+                    <img src={item.image} alt={item.english} className="h-24 object-contain mx-auto mb-3" />
+                  ) : item.icon ? (
+                    <div className="text-6xl mb-3">{item.icon}</div>
+                  ) : null}
+                  <h3 className="text-2xl font-bold text-purple-600">{item.english}</h3>
+                  <p className="text-gray-600 font-medium">Meaning: {item.spanish}</p>
+                  {item.description && (
+                    <p className="text-sm text-gray-500 italic mt-2">{item.description}</p>
+                  )}
+                  <button className="mt-2 bg-green-500 p-2 rounded-full hover:bg-green-600 transition-colors">
+                    <Volume2 className="w-4 h-4 text-white" />
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+
+      // DIALOGUES
+      case 'dialogues':
+        return (
+          <div>
+            <h1 className="text-3xl lg:text-4xl font-bold text-purple-700 mb-2 text-center">{slide.title}</h1>
+            {slide.subtitle && (
+              <p className="text-lg text-gray-600 mb-6 text-center">{slide.subtitle}</p>
+            )}
+            <div className="grid md:grid-cols-3 gap-4">
+              {slide.content.dialogues?.map((dialogue, i) => (
+                <div key={i} className="bg-gradient-to-b from-blue-50 to-purple-50 rounded-xl p-4 border-2 border-blue-200 shadow-md">
+                  {dialogue.image && (
+                    <img src={dialogue.image} alt="dialogue" className="h-20 object-contain mx-auto mb-3" />
+                  )}
+                  <div className="space-y-2">
+                    {dialogue.speakers.map((speaker, j) => (
+                      <div key={j} className="bg-white rounded-lg p-2 shadow-sm">
+                        <span className="font-bold text-purple-600">{speaker}: </span>
+                        <span className="text-gray-700">{dialogue.lines[j]}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+
+      // ACTIVITIES
+      case 'activities':
+        return (
+          <div>
+            <h1 className="text-3xl lg:text-4xl font-bold text-purple-700 mb-2 text-center">{slide.title}</h1>
+            {slide.subtitle && (
+              <p className="text-lg text-gray-600 mb-6 text-center">{slide.subtitle}</p>
+            )}
+            <div className="grid md:grid-cols-2 gap-6">
+              {slide.content.activities?.map((activity, i) => (
+                <div key={i} className="bg-gradient-to-b from-green-50 to-emerald-50 rounded-xl p-5 border-2 border-green-200 shadow-md">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="bg-green-500 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">{i + 1}</span>
+                    <h3 className="text-xl font-bold text-green-700">{activity.title}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-3 text-sm">{activity.instruction}</p>
+                  <div className="space-y-2">
+                    {activity.questions.map((q, j) => (
+                      <p key={j} className="text-gray-700 bg-white rounded-lg p-2 text-sm">{j + 1}. {q}</p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         );
