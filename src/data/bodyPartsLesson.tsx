@@ -7,6 +7,7 @@ export const bodyPartsLesson: Lesson = {
   emoji: "🧒",
   color: "from-blue-400 to-blue-600",
   bgColor: "bg-blue-50",
+  pptFile: "/ppts/Aventura-en-el-Cuerpo-Humano.pptx",
   slides: [
     // PÁGINA 1: Intro
     {
@@ -63,22 +64,26 @@ export const bodyPartsLesson: Lesson = {
           {
             spanish: 'Ojos',
             english: 'Eyes',
-            description: 'Para ver todas las cosas geniales a nuestro alrededor.'
+            description: 'Para ver todas las cosas geniales a nuestro alrededor.',
+            audio: '/audios/body/pronunciation_en_eyes.mp3'
           },
           {
             spanish: 'Nariz',
             english: 'Nose',
-            description: 'Para oler flores, comida, y más.'
+            description: 'Para oler flores, comida, y más.',
+            audio: '/audios/body/pronunciation_en_nose.mp3'
           },
           {
             spanish: 'Boca',
             english: 'Mouth',
-            description: 'Para comer y hablar.'
+            description: 'Para comer y hablar.',
+            audio: '/audios/body/pronunciation_en_mouth.mp3'
           },
           {
             spanish: 'Orejas',
             english: 'Ears',
-            description: 'Para escuchar música y cuentos.'
+            description: 'Para escuchar música y cuentos.',
+            audio: '/audios/body/pronunciation_en_ears.mp3'
           }
         ]
       }
@@ -94,27 +99,32 @@ export const bodyPartsLesson: Lesson = {
           {
             spanish: 'Pelo',
             english: 'Hair',
-            description: 'Nos cubre la cabeza y nos protege.'
+            description: 'Nos cubre la cabeza y nos protege.',
+            audio: '/audios/body/pronunciation_en_hair.mp3'
           },
           {
             spanish: 'Cuello',
             english: 'Neck',
-            description: 'Sostiene la cabeza y la ayuda a moverse.'
+            description: 'Sostiene la cabeza y la ayuda a moverse.',
+            audio: '/audios/body/pronunciation_en_neck.mp3'
           },
           {
             spanish: 'Hombros',
             english: 'Shoulders',
-            description: 'Conectan el cuello con los brazos.'
+            description: 'Conectan el cuello con los brazos.',
+            audio: '/audios/body/pronunciation_en_shoulders.mp3'
           },
           {
             spanish: 'Barriga',
             english: 'Stomach/Belly',
-            description: 'Donde la comida se procesa.'
+            description: 'Donde la comida se procesa.',
+            audio: '/audios/body/pronunciation_en_stomach.mp3'
           },
           {
             spanish: 'Manos',
             english: 'Hands',
-            description: 'Para agarrar cosas y escribir.'
+            description: 'Para agarrar cosas y escribir.',
+            audio: '/audios/body/pronunciation_en_hands.mp3'
           }
         ]
       }
@@ -163,31 +173,36 @@ export const bodyPartsLesson: Lesson = {
             number: 1,
             spanish: 'Codo',
             english: 'Elbow',
-            description: 'La articulación que permite doblar el brazo.'
+            description: 'La articulación que permite doblar el brazo.',
+            audio: '/audios/body/pronunciation_en_elbow.mp3'
           },
           {
             number: 2,
             spanish: 'Muñeca',
             english: 'Wrist',
-            description: 'Conecta la mano con el brazo.'
+            description: 'Conecta la mano con el brazo.',
+            audio: '/audios/body/pronunciation_en_wrist.mp3'
           },
           {
             number: 3,
             spanish: 'Mano',
             english: 'Hand',
-            description: 'Usamos para agarrar. ¡Tiene cinco dedos!'
+            description: 'Usamos para agarrar. ¡Tiene cinco dedos!',
+            audio: '/audios/body/pronunciation_en_hand.mp3'
           },
           {
             number: 4,
             spanish: 'Dedo',
             english: 'Finger',
-            description: 'Cada dedo tiene un nombre, pero en general son fingers.'
+            description: 'Cada dedo tiene un nombre, pero en general son fingers.',
+            audio: '/audios/body/pronunciation_en_finger.mp3'
           },
           {
             number: 5,
             spanish: 'Pulgar',
             english: 'Thumb',
-            description: 'El dedo más fuerte de la mano.'
+            description: 'El dedo más fuerte de la mano.',
+            audio: '/audios/body/pronunciation_en_thumb.mp3'
           }
         ]
       }
@@ -203,27 +218,32 @@ export const bodyPartsLesson: Lesson = {
           {
             spanish: 'Muslo',
             english: 'Thigh',
-            description: 'La parte superior de la leg.'
+            description: 'La parte superior de la leg.',
+            audio: '/audios/body/pronunciation_en_thigh.mp3'
           },
           {
             spanish: 'Rodilla',
             english: 'Knee',
-            description: 'Nos permite doblar la leg.'
+            description: 'Nos permite doblar la leg.',
+            audio: '/audios/body/pronunciation_en_knee.mp3'
           },
           {
             spanish: 'Tobillo',
             english: 'Ankle',
-            description: 'Conecta la leg con el foot.'
+            description: 'Conecta la leg con el foot.',
+            audio: '/audios/body/pronunciation_en_ankle.mp3'
           },
           {
             spanish: 'Pie',
             english: 'Foot',
-            description: 'La base que nos sostiene.'
+            description: 'La base que nos sostiene.',
+            audio: '/audios/body/pronunciation_en_foot.mp3'
           },
           {
             spanish: 'Dedos del Pie',
             english: 'Toes',
-            description: 'Los dedos de nuestros feet.'
+            description: 'Los dedos de nuestros feet.',
+            audio: '/audios/body/pronunciation_en_toes.mp3'
           }
         ],
         note: '¡Recuerda que foot es singular y feet es plural!'
@@ -241,17 +261,20 @@ export const bodyPartsLesson: Lesson = {
           {
             spanish: 'Cerebro',
             english: 'Brain',
-            description: 'Piensa y recuerda. ¡El jefe de todo!'
+            description: 'Piensa y recuerda. ¡El jefe de todo!',
+            audio: '/audios/body/pronunciation_en_brain.mp3'
           },
           {
             spanish: 'Corazón',
             english: 'Heart',
-            description: 'Bombea la sangre a todo el cuerpo.'
+            description: 'Bombea la sangre a todo el cuerpo.',
+            audio: '/audios/body/pronunciation_en_heart.mp3'
           },
           {
             spanish: 'Pulmones',
             english: 'Lungs',
-            description: 'Nos ayudan a respirar aire limpio.'
+            description: 'Nos ayudan a respirar aire limpio.',
+            audio: '/audios/body/pronunciation_en_lungs.mp3'
           }
         ],
         quote: 'Cuida bien tu cuerpo; es el único lugar que tienes para vivir. ¡Es tu templo!'
@@ -267,12 +290,12 @@ export const bodyPartsLesson: Lesson = {
         text: 'Practiquemos algunas palabras importantes que aprendimos hoy.',
         summaryItems: [
           { spanish: 'Cabeza', english: 'Head', pronunciation: '/jéd/' },
-          { spanish: 'Ojo', english: 'Eye', pronunciation: '/ái/' },
+          { spanish: 'Ojo', english: 'Eye', pronunciation: '/ái/', audio: '/audios/body/pronunciation_en_eyes.mp3' },
           { spanish: 'Brazo', english: 'Arm', pronunciation: '/árm/' },
-          { spanish: 'Mano', english: 'Hand', pronunciation: '/jánd/' },
+          { spanish: 'Mano', english: 'Hand', pronunciation: '/jánd/', audio: '/audios/body/pronunciation_en_hand.mp3' },
           { spanish: 'Pierna', english: 'Leg', pronunciation: '/lég/' },
-          { spanish: 'Pie', english: 'Foot', pronunciation: '/fút/' },
-          { spanish: 'Dedo', english: 'Finger', pronunciation: '/fínguer/' }
+          { spanish: 'Pie', english: 'Foot', pronunciation: '/fút/', audio: '/audios/body/pronunciation_en_foot.mp3' },
+          { spanish: 'Dedo', english: 'Finger', pronunciation: '/fínguer/', audio: '/audios/body/pronunciation_en_finger.mp3' }
         ]
       }
     },
