@@ -4,6 +4,8 @@ import { Home, Trophy } from 'lucide-react';
 import type { Game } from '../types';
 import MemoryGame from '../components/MemoryGame';
 import QuizGame from '../components/QuizGame';
+import DragDropGame from '../components/DragDropGame';
+import MatchingGame from '../components/MatchingGame';
 
 interface GameViewProps {
   games: Game[];
@@ -96,8 +98,13 @@ const GameView: React.FC<GameViewProps> = ({ games }) => {
             {game.type === 'memory' ? (
               <MemoryGame gameColor={game.color} />
             )  : game.type === 'quiz' ? (
-            <QuizGame gameColor={game.color} />
-            ) : (
+              <QuizGame gameColor={game.color} />
+            )  : game.type === 'dragdrop' ? (
+              <DragDropGame gameColor={game.color} />
+            ) : game.type === 'matching' ? (
+               <MatchingGame gameColor={game.color} />
+            )
+             : (
               <>
                 <button
                   className={`bg-gradient-to-r ${game.color} text-white text-xl font-bold py-5 px-12 rounded-2xl hover:shadow-2xl transform hover:scale-105 transition-all shadow-lg`}
